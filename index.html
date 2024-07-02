@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Panels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <spline-viewer url="https://prod.spline.design/r9WoAaBnClkm1Wua/scene.splinecode"></spline-viewer>
+        <div id="panel1" class="panel">
+            <button class="close-btn" onclick="closePanel('panel1')">Close</button>
+            <h2>Panel 1 Content</h2>
+            <p>This is the content of the first panel.</p>
+        </div>
+        <div id="panel2" class="panel">
+            <button class="close-btn" onclick="closePanel('panel2')">Close</button>
+            <h2>Panel 2 Content</h2>
+            <p>This is the content of the second panel.</p>
+        </div>
+        <button class="open-btn" onclick="openPanel('panel1')">Open Panel 1</button>
+        <button class="open-btn" onclick="openPanel('panel2')">Open Panel 2</button>
+    </div>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.8.3/build/spline-viewer.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
